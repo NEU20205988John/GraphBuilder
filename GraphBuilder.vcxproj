@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A044E23A-280C-3132-9EDA-9EDF98380C31}</ProjectGuid>
+    <RootNamespace>GraphBuilder</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>GraphBuilder</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>GraphBuilder</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GraphBuilder</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GraphBuilder</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtSvg;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtWidgets;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtGui;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtCore;release;.;\include;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Svg.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Widgets.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Gui.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Core.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\GraphBuilder.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;NDEBUG;QT_NO_DEBUG;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtSvg;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtWidgets;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtGui;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\include\QtCore;debug;.;\include;..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Svgd.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Widgetsd.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Guid.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6Cored.lib;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\GraphBuilder.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="customScrollContainer.cpp" />
+    <ClCompile Include="customWidgets.cpp" />
+    <ClCompile Include="graph_implement.cpp" />
+    <ClCompile Include="graph_view.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="mycanvas.cpp" />
+    <ClCompile Include="slidepage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="customScrollContainer.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">customScrollContainer.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include customScrollContainer.h -o release\moc_customScrollContainer.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC customScrollContainer.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_customScrollContainer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">customScrollContainer.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include customScrollContainer.h -o debug\moc_customScrollContainer.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC customScrollContainer.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_customScrollContainer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="customWidgets.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">customWidgets.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include customWidgets.h -o release\moc_customWidgets.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC customWidgets.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_customWidgets.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">customWidgets.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include customWidgets.h -o debug\moc_customWidgets.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC customWidgets.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_customWidgets.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="graph_implement.h" />
+    <CustomBuild Include="graph_view.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">graph_view.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include graph_view.h -o release\moc_graph_view.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC graph_view.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_graph_view.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">graph_view.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include graph_view.h -o debug\moc_graph_view.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC graph_view.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_graph_view.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainwindow.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainwindow.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC mainwindow.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="mycanvas.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mycanvas.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include mycanvas.h -o release\moc_mycanvas.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC mycanvas.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_mycanvas.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mycanvas.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include mycanvas.h -o debug\moc_mycanvas.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC mycanvas.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_mycanvas.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="slidepage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">slidepage.h;release\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DNDEBUG -DQT_NO_DEBUG -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/release/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include slidepage.h -o release\moc_slidepage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC slidepage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_slidepage.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">slidepage.h;debug\moc_predefs.h;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DQT_SVG_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include D:/Cpp_Codes/GraphBuilder/GraphBuilder-main/debug/moc_predefs.h -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/mkspecs/win32-msvc -ID:/Cpp_Codes/GraphBuilder/GraphBuilder-main -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtSvg -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtWidgets -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtGui -ID:/Softwares/Qt6.5/6.5.0/msvc2019_64/include/QtCore -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Softwares/Qt6.5/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Softwares/Qt6.5/Tools/mingw1120_64/x86_64-w64-mingw32/include slidepage.h -o debug\moc_slidepage.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC slidepage.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_slidepage.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_customScrollContainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_customScrollContainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_customWidgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_customWidgets.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_graph_view.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_graph_view.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mycanvas.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mycanvas.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -BxD:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -BxD:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\..\Softwares\Qt6.5\6.5.0\msvc2019_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\moc_slidepage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_slidepage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_icons.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_icons.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">mainwindow.ui;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">mainwindow.ui;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\uic.exe mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC mainwindow.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="icons\back.svg" />
+    <None Include="icons\create.png" />
+    <CustomBuild Include="icons.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">icons.qrc;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\rcc.exe;icons\settings.svg;icons\layers.svg;icons\open.png;icons\back.svg;icons\open.svg;icons\create.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\rcc.exe -name icons --no-zstd icons.qrc -o release\qrc_icons.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC icons.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qrc_icons.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">icons.qrc;D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\rcc.exe;icons\settings.svg;icons\layers.svg;icons\open.png;icons\back.svg;icons\open.svg;icons\create.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Softwares\Qt6.5\6.5.0\msvc2019_64\bin\rcc.exe -name icons --no-zstd icons.qrc -o debug\qrc_icons.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC icons.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qrc_icons.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="icons\layers.svg" />
+    <None Include="icons\open.png" />
+    <None Include="icons\open.svg" />
+    <None Include="icons\settings.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\Cpp_Codes\GraphBuilder\GraphBuilder-main\GraphBuilder_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
