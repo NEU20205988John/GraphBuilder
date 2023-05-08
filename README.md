@@ -1,6 +1,6 @@
 # GraphBuilder
 
-This is a project inspired by my Data Structure & Algorithm Course homework, it's used to create and visualize graphs both directed or undirected, and supports underlaying data structure of either adjacent list or multiple adjacent list
+It's used to create and visualize graphs both directed or undirected, and supports underlaying data structure of either adjacent list or multiple adjacent list
 
 ## Functionalities
 
@@ -16,8 +16,6 @@ This is a project inspired by my Data Structure & Algorithm Course homework, it'
 - Support algorithms on forests
 
 ## Deploy and run
-
-If you want to use the packed executable, you can download it from the [release page](https://github.com/Linloir/GraphBuilder/releases)
 
 If you want to view the source code and run it from QT Creator, you might need:
 
